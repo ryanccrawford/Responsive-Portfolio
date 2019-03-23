@@ -1,0 +1,201 @@
+/** Color Scheme **/
+.black-text{ color:black; }
+.white-text{ color:white; }
+.blue-back{ background-color: #174351; }
+.white-back{ background-color: white; }
+.blue-text{ color:blue; }
+
+/** Set some Defaults **/
+body{margin: 0 0;}
+.heading-font, h1, h2, h3, h4, h5, h6, p, a{font-family: Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-size: x-large;
+    padding-left: 22px;
+}
+p {
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: justify;
+    font-size: large;
+    padding-left: 22px;
+}
+/** Header Components **/
+
+header {
+    width: 100%;
+    height: 50px;
+    margin-bottom: auto;
+}
+.header-shadow{box-shadow: 5px 4px 14px 0px #091421;}
+.name-logo {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 90px;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 5;
+}
+
+/** Navagation / Menus **/
+
+nav{
+    margin-right: 190px;
+    margin-top: 20px;
+}
+.menu-item{
+    display: inline;
+    padding-left: 25px;
+    font-size: x-large;
+}
+.menu-item:focus {
+    color: darkred;
+    border: dashed 1px black;
+    padding: 4px;
+  }
+nav a {text-decoration: none;}
+nav.active a {color:red;}
+nav a:hover{ color:green !important; }
+
+/** Content Area **/
+
+.background { 
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-color: cornflowerblue;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        padding-top: 1px;
+        margin-bottom: 19px;
+        padding-bottom: 10px;
+}
+.container-center{ 
+    width: 960px;
+    margin: 60px auto 25px auto;
+    border-radius: 10px;
+    min-height: 600px;
+}
+.box-image img { height: 200px; }
+article{ display: inline-block; }
+footer span.copy{ display: block; text-align: center; }
+.center{ text-align: center;}
+.flow-box { display: inline-block; }
+.over-banner{
+    position: relative;
+    top: -80px;
+    background-color: rgba( 20, 14, 21, 0.80);
+    height: 60px;
+    width: 312px;
+    border: 2px solid white;
+}
+.over-title{
+    position: relative;
+    padding-top: 20px;
+    font-size: x-large;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.box { padding:25px; }
+.relative{ position: relative; }
+.box-image{ padding: 25px; }
+.box-title{
+    font-size: xx-large;
+    padding: 10px;
+    border-bottom: 2px solid teal;
+    margin-bottom: 20px;
+}
+.content-wrapper{
+    padding-left:10px;
+    padding-right:30px;
+    line-height: 2.3;
+}
+footer{
+    width: 100%;
+    height:50px;
+    clear: both;
+}
+.border-top{ border-top:3px solid; }
+
+
+/** Positioning **/
+
+.float-left{ float: left; }
+.float-right{ float: right; }
+.center{ text-align: center; }
+.left{ text-align: left; }
+.right{ text-align: right; }
+.relative{ position: relative;}
+.absolute{ position: absolute;}
+/** Text Styling **/
+
+.bold{ font-weight: bold; }
+
+
+/** Form Styles **/
+
+input, textarea{     
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 20px;
+    font-family: sans-serif; 
+}
+
+button {
+        min-width: 80px;
+        border-radius: 6px;
+        text-align: center;
+        cursor: pointer;
+        color: #00446D;
+        background-color: lightgrey;
+        padding: 7px 13px 7px;
+        border-width: 2px;
+        border-color: black;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+/** Icon styles **/
+
+.icons{ 
+    display: inline-block;
+    width: 100%; 
+}
+.icons ul {
+    float: right;
+    padding-top: 5px;
+}
+.icons li{ display: inline-block; }
+.icon{ padding: 5px;}
+.icons svg:hover { box-shadow: 1px 1px 1px 1px black; }
+
+@media only screen and (max-width: 1048px) { 
+    .container-center{ width: 80%;}
+    nav { margin-right: 5px; }
+    header { width: 100%;min-width: 600px;}
+    .name-logo {margin-left: 0;}
+}
+
+@media only screen and (max-width: 720px) {
+    .box-image{
+        float: none;
+        width:80%;
+        height: auto;
+        text-align: center;
+        display: block;
+    }
+   
+    .container-center{width: 80%;}
+    nav {margin-right: 5px;float:  left; }
+    header {width: 100%;min-width: 600px;}
+    .name-logo {margin-left: 0;}
+}
